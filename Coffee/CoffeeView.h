@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong,nonatomic) UISegmentedControl *strenghtControl;
 @property (strong,nonatomic) UISegmentedControl *volumeControl;
+@property (strong,nonatomic) UISwitch *sugarSwitch;
+@property (strong,nonatomic) UISwitch *milkSwitch;
+@property (strong,nonatomic) UISwitch *creamSwitch;
 @property (strong,nonatomic) UILabel *priceLabel;
 
 @end
