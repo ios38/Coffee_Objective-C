@@ -45,7 +45,7 @@
 
 - (NSUInteger)getPriceOf:(id<Coffee>)coffee {
     self.userCoffee = [[UserCoffee alloc] init];
-    Strenght *strenght = [[Strenght alloc] initWith:self.userCoffee andCoffeeStrenght:[self selectedStrenght]];
+    Strenght *strenght = [[Strenght alloc] initWithBaseCoffee:self.userCoffee andCoffeeStrenght:[self selectedStrenght]];
 
     return [strenght price];
 }

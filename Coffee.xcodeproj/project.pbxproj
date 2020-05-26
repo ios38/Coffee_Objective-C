@@ -14,7 +14,6 @@
 		50DC98A8247C116E00F4D62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DC98A6247C116E00F4D62D /* LaunchScreen.storyboard */; };
 		50DC98AB247C116E00F4D62D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98AA247C116E00F4D62D /* main.m */; };
 		50DC98B4247C138E00F4D62D /* UserCoffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98B3247C138E00F4D62D /* UserCoffee.m */; };
-		50DC98B7247C14DC00F4D62D /* CoffeeDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98B6247C14DC00F4D62D /* CoffeeDecorator.m */; };
 		50DC98BB247C167A00F4D62D /* Strenght.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BA247C167A00F4D62D /* Strenght.m */; };
 		50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BD247CAFB500F4D62D /* CoffeeView.m */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		50DC98B2247C138E00F4D62D /* UserCoffee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCoffee.h; sourceTree = "<group>"; };
 		50DC98B3247C138E00F4D62D /* UserCoffee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCoffee.m; sourceTree = "<group>"; };
 		50DC98B5247C14DC00F4D62D /* CoffeeDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeDecorator.h; sourceTree = "<group>"; };
-		50DC98B6247C14DC00F4D62D /* CoffeeDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeDecorator.m; sourceTree = "<group>"; };
 		50DC98B9247C167A00F4D62D /* Strenght.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strenght.h; sourceTree = "<group>"; };
 		50DC98BA247C167A00F4D62D /* Strenght.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strenght.m; sourceTree = "<group>"; };
 		50DC98BC247CAFB500F4D62D /* CoffeeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeView.h; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				50DC98B2247C138E00F4D62D /* UserCoffee.h */,
 				50DC98B3247C138E00F4D62D /* UserCoffee.m */,
 				50DC98B5247C14DC00F4D62D /* CoffeeDecorator.h */,
-				50DC98B6247C14DC00F4D62D /* CoffeeDecorator.m */,
 				50DC98B9247C167A00F4D62D /* Strenght.h */,
 				50DC98BA247C167A00F4D62D /* Strenght.m */,
 				50DC98BC247CAFB500F4D62D /* CoffeeView.h */,
@@ -173,7 +170,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DC98A0247C116C00F4D62D /* ViewController.m in Sources */,
-				50DC98B7247C14DC00F4D62D /* CoffeeDecorator.m in Sources */,
 				50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */,
 				50DC989A247C116C00F4D62D /* AppDelegate.m in Sources */,
 				50DC98AB247C116E00F4D62D /* main.m in Sources */,

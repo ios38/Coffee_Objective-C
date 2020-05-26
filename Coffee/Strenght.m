@@ -16,7 +16,9 @@
 
 @implementation Strenght
 
-- (instancetype) initWith:(id <Coffee> _Nonnull)coffee andCoffeeStrenght:(CoffeeStrenght)coffeeStrenght {
+@synthesize baseCoffee;
+
+- (instancetype) initWithBaseCoffee:(id <Coffee> _Nonnull)coffee andCoffeeStrenght:(CoffeeStrenght)coffeeStrenght {
     self = [super init];
     if (self) {
         self.baseCoffee = coffee;

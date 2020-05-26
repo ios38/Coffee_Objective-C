@@ -11,9 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CoffeeDecorator : NSObject <Coffee>
+@protocol CoffeeDecorator <Coffee>
 
-@property (strong,nonatomic) id <Coffee> baseCoffee;
+@property (strong,nonatomic) id <Coffee> _Nonnull baseCoffee;
+
+@optional
 
 - (instancetype)initWithBaseCoffee:(id <Coffee> _Nonnull) baseCoffee;
 

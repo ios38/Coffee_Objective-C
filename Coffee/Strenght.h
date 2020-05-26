@@ -18,9 +18,9 @@ typedef enum {
 } CoffeeStrenght;
 
 
-@interface Strenght : CoffeeDecorator
+@interface Strenght: NSObject <CoffeeDecorator>
 
-- (instancetype)initWith:(id <Coffee> _Nonnull)coffee andCoffeeStrenght:(CoffeeStrenght)coffeeStrenght;
+- (instancetype)initWithBaseCoffee:(id <Coffee> _Nonnull)coffee andCoffeeStrenght:(CoffeeStrenght)coffeeStrenght;
 
 @end
 
