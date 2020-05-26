@@ -16,6 +16,7 @@
 		50DC98B4247C138E00F4D62D /* UserCoffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98B3247C138E00F4D62D /* UserCoffee.m */; };
 		50DC98BB247C167A00F4D62D /* Strenght.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BA247C167A00F4D62D /* Strenght.m */; };
 		50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BD247CAFB500F4D62D /* CoffeeView.m */; };
+		50DC98C1247D30DC00F4D62D /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98C0247D30DC00F4D62D /* Volume.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		50DC98BA247C167A00F4D62D /* Strenght.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strenght.m; sourceTree = "<group>"; };
 		50DC98BC247CAFB500F4D62D /* CoffeeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeView.h; sourceTree = "<group>"; };
 		50DC98BD247CAFB500F4D62D /* CoffeeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeView.m; sourceTree = "<group>"; };
+		50DC98BF247D30DC00F4D62D /* Volume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		50DC98C0247D30DC00F4D62D /* Volume.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Volume.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				50DC98B5247C14DC00F4D62D /* CoffeeDecorator.h */,
 				50DC98B9247C167A00F4D62D /* Strenght.h */,
 				50DC98BA247C167A00F4D62D /* Strenght.m */,
+				50DC98BF247D30DC00F4D62D /* Volume.h */,
+				50DC98C0247D30DC00F4D62D /* Volume.m */,
 				50DC98BC247CAFB500F4D62D /* CoffeeView.h */,
 				50DC98BD247CAFB500F4D62D /* CoffeeView.m */,
 				50DC989E247C116C00F4D62D /* ViewController.h */,
@@ -172,6 +177,7 @@
 				50DC98A0247C116C00F4D62D /* ViewController.m in Sources */,
 				50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */,
 				50DC989A247C116C00F4D62D /* AppDelegate.m in Sources */,
+				50DC98C1247D30DC00F4D62D /* Volume.m in Sources */,
 				50DC98AB247C116E00F4D62D /* main.m in Sources */,
 				50DC98BB247C167A00F4D62D /* Strenght.m in Sources */,
 				50DC98B4247C138E00F4D62D /* UserCoffee.m in Sources */,

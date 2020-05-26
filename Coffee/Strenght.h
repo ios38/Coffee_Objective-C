@@ -17,7 +17,6 @@ typedef enum {
     veryStrong
 } CoffeeStrenght;
 
-
 @interface Strenght: NSObject <CoffeeDecorator>
 
 - (instancetype)initWithBaseCoffee:(id <Coffee> _Nonnull)coffee andCoffeeStrenght:(CoffeeStrenght)coffeeStrenght;

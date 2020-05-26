@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CoffeeView : UIView
 
 @property (strong,nonatomic) UISegmentedControl *strenghtControl;
+@property (strong,nonatomic) UISegmentedControl *volumeControl;
+@property (strong,nonatomic) UILabel *priceLabel;
 
 @end
 

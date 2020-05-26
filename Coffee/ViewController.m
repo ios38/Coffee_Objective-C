@@ -10,12 +10,12 @@
 #import "CoffeeView.h"
 #import "UserCoffee.h"
 #import "Strenght.h"
+#import "Volume.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) CoffeeView *coffeeView;
 @property (strong, nonatomic) UserCoffee *userCoffee;
-//@property (strong,nonatomic) CoffeeStrenght *selectedStrenght;
 
 @end
 
@@ -26,7 +26,9 @@
     [super viewDidLoad];
     self.coffeeView = [[CoffeeView alloc] initWithFrame:self.view.frame];
     self.view = self.coffeeView;
-    [self.coffeeView.strenghtControl addTarget:self action:@selector(strenghtChanged:) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.strenghtControl addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.volumeControl addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
+    [self coffeeChanged];
 }
 
 - (CoffeeStrenght) selectedStrenght {
@@ -43,16 +45,32 @@
     }
 }
 
-- (NSUInteger)getPriceOf:(id<Coffee>)coffee {
+- (CoffeeVolume) selectedVolume {
+    switch (self.coffeeView.volumeControl.selectedSegmentIndex) {
+        case 0:
+            return small;
+            break;
+        case 1:
+            return medium;
+            break;
+        default:
+            return big;
+            break;
+    }
+}
+
+- (NSUInteger) getPriceOf:(id<Coffee>)coffee {
     self.userCoffee = [[UserCoffee alloc] init];
     Strenght *strenght = [[Strenght alloc] initWithBaseCoffee:self.userCoffee andCoffeeStrenght:[self selectedStrenght]];
+    Volume *volume = [[Volume alloc] initWithBaseCoffee:strenght andCoffeeVolume:[self selectedVolume]];
 
-    return [strenght price];
+    return [volume price];
 }
 
 
-- (void)strenghtChanged:(UISegmentedControl *)strenghtControl{
-    NSLog(@"userCoffee price: %lu",[self getPriceOf:self.userCoffee]);
+- (void) coffeeChanged {
+    //NSLog(@"userCoffee price: %lu",[self getPriceOf:self.userCoffee]);
+    self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
 }
 
 @end
