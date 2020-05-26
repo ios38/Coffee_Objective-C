@@ -10,10 +10,13 @@
 		50DC989A247C116C00F4D62D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC9899247C116C00F4D62D /* AppDelegate.m */; };
 		50DC989D247C116C00F4D62D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC989C247C116C00F4D62D /* SceneDelegate.m */; };
 		50DC98A0247C116C00F4D62D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC989F247C116C00F4D62D /* ViewController.m */; };
-		50DC98A3247C116C00F4D62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DC98A1247C116C00F4D62D /* Main.storyboard */; };
 		50DC98A5247C116E00F4D62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DC98A4247C116E00F4D62D /* Assets.xcassets */; };
 		50DC98A8247C116E00F4D62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DC98A6247C116E00F4D62D /* LaunchScreen.storyboard */; };
 		50DC98AB247C116E00F4D62D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98AA247C116E00F4D62D /* main.m */; };
+		50DC98B4247C138E00F4D62D /* UserCoffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98B3247C138E00F4D62D /* UserCoffee.m */; };
+		50DC98B7247C14DC00F4D62D /* CoffeeDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98B6247C14DC00F4D62D /* CoffeeDecorator.m */; };
+		50DC98BB247C167A00F4D62D /* Strenght.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BA247C167A00F4D62D /* Strenght.m */; };
+		50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BD247CAFB500F4D62D /* CoffeeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +27,19 @@
 		50DC989C247C116C00F4D62D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		50DC989E247C116C00F4D62D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		50DC989F247C116C00F4D62D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		50DC98A2247C116C00F4D62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50DC98A4247C116E00F4D62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50DC98A7247C116E00F4D62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50DC98A9247C116E00F4D62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50DC98AA247C116E00F4D62D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50DC98B1247C11B300F4D62D /* Coffee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
+		50DC98B2247C138E00F4D62D /* UserCoffee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCoffee.h; sourceTree = "<group>"; };
+		50DC98B3247C138E00F4D62D /* UserCoffee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCoffee.m; sourceTree = "<group>"; };
+		50DC98B5247C14DC00F4D62D /* CoffeeDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeDecorator.h; sourceTree = "<group>"; };
+		50DC98B6247C14DC00F4D62D /* CoffeeDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeDecorator.m; sourceTree = "<group>"; };
+		50DC98B9247C167A00F4D62D /* Strenght.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strenght.h; sourceTree = "<group>"; };
+		50DC98BA247C167A00F4D62D /* Strenght.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strenght.m; sourceTree = "<group>"; };
+		50DC98BC247CAFB500F4D62D /* CoffeeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeView.h; sourceTree = "<group>"; };
+		50DC98BD247CAFB500F4D62D /* CoffeeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +72,35 @@
 		50DC9897247C116C00F4D62D /* Coffee */ = {
 			isa = PBXGroup;
 			children = (
-				50DC9898247C116C00F4D62D /* AppDelegate.h */,
-				50DC9899247C116C00F4D62D /* AppDelegate.m */,
-				50DC989B247C116C00F4D62D /* SceneDelegate.h */,
-				50DC989C247C116C00F4D62D /* SceneDelegate.m */,
+				50DC98B8247C14ED00F4D62D /* Core */,
+				50DC98B1247C11B300F4D62D /* Coffee.h */,
+				50DC98B2247C138E00F4D62D /* UserCoffee.h */,
+				50DC98B3247C138E00F4D62D /* UserCoffee.m */,
+				50DC98B5247C14DC00F4D62D /* CoffeeDecorator.h */,
+				50DC98B6247C14DC00F4D62D /* CoffeeDecorator.m */,
+				50DC98B9247C167A00F4D62D /* Strenght.h */,
+				50DC98BA247C167A00F4D62D /* Strenght.m */,
+				50DC98BC247CAFB500F4D62D /* CoffeeView.h */,
+				50DC98BD247CAFB500F4D62D /* CoffeeView.m */,
 				50DC989E247C116C00F4D62D /* ViewController.h */,
 				50DC989F247C116C00F4D62D /* ViewController.m */,
-				50DC98A1247C116C00F4D62D /* Main.storyboard */,
 				50DC98A4247C116E00F4D62D /* Assets.xcassets */,
 				50DC98A6247C116E00F4D62D /* LaunchScreen.storyboard */,
 				50DC98A9247C116E00F4D62D /* Info.plist */,
 				50DC98AA247C116E00F4D62D /* main.m */,
 			);
 			path = Coffee;
+			sourceTree = "<group>";
+		};
+		50DC98B8247C14ED00F4D62D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				50DC9898247C116C00F4D62D /* AppDelegate.h */,
+				50DC9899247C116C00F4D62D /* AppDelegate.m */,
+				50DC989B247C116C00F4D62D /* SceneDelegate.h */,
+				50DC989C247C116C00F4D62D /* SceneDelegate.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,6 @@
 			files = (
 				50DC98A8247C116E00F4D62D /* LaunchScreen.storyboard in Resources */,
 				50DC98A5247C116E00F4D62D /* Assets.xcassets in Resources */,
-				50DC98A3247C116C00F4D62D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DC98A0247C116C00F4D62D /* ViewController.m in Sources */,
+				50DC98B7247C14DC00F4D62D /* CoffeeDecorator.m in Sources */,
+				50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */,
 				50DC989A247C116C00F4D62D /* AppDelegate.m in Sources */,
 				50DC98AB247C116E00F4D62D /* main.m in Sources */,
+				50DC98BB247C167A00F4D62D /* Strenght.m in Sources */,
+				50DC98B4247C138E00F4D62D /* UserCoffee.m in Sources */,
 				50DC989D247C116C00F4D62D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		50DC98A1247C116C00F4D62D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50DC98A2247C116C00F4D62D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50DC98A6247C116E00F4D62D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
