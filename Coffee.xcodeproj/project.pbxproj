@@ -17,6 +17,9 @@
 		50DC98BB247C167A00F4D62D /* Strenght.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BA247C167A00F4D62D /* Strenght.m */; };
 		50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98BD247CAFB500F4D62D /* CoffeeView.m */; };
 		50DC98C1247D30DC00F4D62D /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98C0247D30DC00F4D62D /* Volume.m */; };
+		50DC98C4247D509700F4D62D /* Milk.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98C3247D509700F4D62D /* Milk.m */; };
+		50DC98C7247D571A00F4D62D /* Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98C6247D571A00F4D62D /* Sugar.m */; };
+		50DC98CA247D5C7D00F4D62D /* Cream.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DC98C9247D5C7D00F4D62D /* Cream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,12 @@
 		50DC98BD247CAFB500F4D62D /* CoffeeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeView.m; sourceTree = "<group>"; };
 		50DC98BF247D30DC00F4D62D /* Volume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
 		50DC98C0247D30DC00F4D62D /* Volume.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Volume.m; sourceTree = "<group>"; };
+		50DC98C2247D509700F4D62D /* Milk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Milk.h; sourceTree = "<group>"; };
+		50DC98C3247D509700F4D62D /* Milk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Milk.m; sourceTree = "<group>"; };
+		50DC98C5247D571A00F4D62D /* Sugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sugar.h; sourceTree = "<group>"; };
+		50DC98C6247D571A00F4D62D /* Sugar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sugar.m; sourceTree = "<group>"; };
+		50DC98C8247D5C7D00F4D62D /* Cream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cream.h; sourceTree = "<group>"; };
+		50DC98C9247D5C7D00F4D62D /* Cream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cream.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +91,12 @@
 				50DC98BA247C167A00F4D62D /* Strenght.m */,
 				50DC98BF247D30DC00F4D62D /* Volume.h */,
 				50DC98C0247D30DC00F4D62D /* Volume.m */,
+				50DC98C5247D571A00F4D62D /* Sugar.h */,
+				50DC98C6247D571A00F4D62D /* Sugar.m */,
+				50DC98C2247D509700F4D62D /* Milk.h */,
+				50DC98C3247D509700F4D62D /* Milk.m */,
+				50DC98C8247D5C7D00F4D62D /* Cream.h */,
+				50DC98C9247D5C7D00F4D62D /* Cream.m */,
 				50DC98BC247CAFB500F4D62D /* CoffeeView.h */,
 				50DC98BD247CAFB500F4D62D /* CoffeeView.m */,
 				50DC989E247C116C00F4D62D /* ViewController.h */,
@@ -177,10 +192,13 @@
 				50DC98A0247C116C00F4D62D /* ViewController.m in Sources */,
 				50DC98BE247CAFB500F4D62D /* CoffeeView.m in Sources */,
 				50DC989A247C116C00F4D62D /* AppDelegate.m in Sources */,
+				50DC98C4247D509700F4D62D /* Milk.m in Sources */,
 				50DC98C1247D30DC00F4D62D /* Volume.m in Sources */,
 				50DC98AB247C116E00F4D62D /* main.m in Sources */,
 				50DC98BB247C167A00F4D62D /* Strenght.m in Sources */,
 				50DC98B4247C138E00F4D62D /* UserCoffee.m in Sources */,
+				50DC98CA247D5C7D00F4D62D /* Cream.m in Sources */,
+				50DC98C7247D571A00F4D62D /* Sugar.m in Sources */,
 				50DC989D247C116C00F4D62D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

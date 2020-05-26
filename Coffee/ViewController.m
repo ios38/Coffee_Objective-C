@@ -11,6 +11,9 @@
 #import "UserCoffee.h"
 #import "Strenght.h"
 #import "Volume.h"
+#import "Sugar.h"
+#import "Milk.h"
+#import "Cream.h"
 
 @interface ViewController ()
 
@@ -28,6 +31,9 @@
     self.view = self.coffeeView;
     [self.coffeeView.strenghtControl addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
     [self.coffeeView.volumeControl addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.sugarSwitch addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.milkSwitch addTarget:self action:@selector(milkChanged) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.creamSwitch addTarget:self action:@selector(creamChanged) forControlEvents: UIControlEventValueChanged];
     [self coffeeChanged];
 }
 
@@ -63,13 +69,24 @@
     self.userCoffee = [[UserCoffee alloc] init];
     Strenght *strenght = [[Strenght alloc] initWithBaseCoffee:self.userCoffee andCoffeeStrenght:[self selectedStrenght]];
     Volume *volume = [[Volume alloc] initWithBaseCoffee:strenght andCoffeeVolume:[self selectedVolume]];
+    Sugar *sugar = [[Sugar alloc] initWithBaseCoffee:volume andSugar:self.coffeeView.sugarSwitch.isOn];
+    Milk *milk = [[Milk alloc] initWithBaseCoffee:sugar andMilk:self.coffeeView.milkSwitch.isOn];
+    Cream *cream = [[Cream alloc] initWithBaseCoffee:milk andCream:self.coffeeView.creamSwitch.isOn];
 
-    return [volume price];
+    return [cream price];
 }
 
-
 - (void) coffeeChanged {
-    //NSLog(@"userCoffee price: %lu",[self getPriceOf:self.userCoffee]);
+    self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
+}
+
+- (void) milkChanged {
+    [self.coffeeView.creamSwitch setOn:NO animated:YES];
+    self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
+}
+
+- (void) creamChanged {
+    [self.coffeeView.milkSwitch setOn:NO animated:YES];
     self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
 }
 
