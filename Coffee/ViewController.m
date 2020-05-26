@@ -32,8 +32,8 @@
     [self.coffeeView.strenghtControl addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
     [self.coffeeView.volumeControl addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
     [self.coffeeView.sugarSwitch addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
-    [self.coffeeView.milkSwitch addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
-    [self.coffeeView.creamSwitch addTarget:self action:@selector(coffeeChanged) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.milkSwitch addTarget:self action:@selector(milkChanged) forControlEvents: UIControlEventValueChanged];
+    [self.coffeeView.creamSwitch addTarget:self action:@selector(creamChanged) forControlEvents: UIControlEventValueChanged];
     [self coffeeChanged];
 }
 
@@ -77,6 +77,16 @@
 }
 
 - (void) coffeeChanged {
+    self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
+}
+
+- (void) milkChanged {
+    [self.coffeeView.creamSwitch setOn:NO animated:YES];
+    self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
+}
+
+- (void) creamChanged {
+    [self.coffeeView.milkSwitch setOn:NO animated:YES];
     self.coffeeView.priceLabel.text = [NSString stringWithFormat:@"Coffee price: %lu",[self getPriceOf:self.userCoffee]];
 }
 
